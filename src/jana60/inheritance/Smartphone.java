@@ -8,21 +8,15 @@ public class Smartphone extends Prodotto {
     private String imei;
     Random random = new Random();
     
-	public Smartphone(String marca, String nome, float prezzoBase, int codice, int memoria) {
+	public Smartphone(String marca, String nome, float prezzoBase, int codice, int memoria, String imei) {
 		super(marca, nome, prezzoBase, codice);
 		this.memoria = memoria;
-		this.imei = generaImei();
+		this.imei = imei;
 	}
-	String generaImei( ) {
-		String imei = "";
-		for (int i = 0; i < 20; i++); {
-			imei += random.nextInt(10);
-			return imei;
-		}
-	}
+	
 	@Override 
 		public String toString() {
-			return super.toString() + "\n" + "IMEI Smartphone :" + imei + "\n" + "Memoria: " + memoria + "Gb";
+			return super.toString() + "\n" + "IMEI Smartphone :" + imei + "\n" + "Memoria:" + memoria + "Gb";
 		}
 	
 	}

@@ -27,7 +27,7 @@ Lo shop gestisce diversi tipi di prodotto:
 Utilizzate l’ereditarietà per riutilizzare il codice di Prodotto nella stesura delle classi che gestiscono i vari sotto tipi di prodotto e testate le funzionalità delle vostre classi in una classe Main con metodo main.
 */     
 		
-		Smartphone prodotto1 = new Smartphone("Samsung", "Galaxy21", 350f,123,128);
+		Smartphone prodotto1 = new Smartphone("Samsung", "Galaxy21", 350f,123,128, "12345676554");
 		Televisori prodotto2  = new Televisori ("Lg", "Ultravision", 400f, 555, 32, true);
 		Cuffie prodotto3 = new Cuffie ("Apple", "Airpods",170f,333, "RoseGold", false);
 	    
